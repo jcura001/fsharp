@@ -62,4 +62,16 @@ fun x -> fun y -> x + y + ".";;
 fun f -> f (f "cat");;
 
 //problem16
-f
+
+let rec gcd = function 
+    | (a,0) -> a
+    | (a,b) -> gcd (b, a % b)
+
+let add a b = a+b
+
+let (.+) (a,b) (c,d) = 
+    if b = d then (a,b)
+    
+    
+//problem17
+let revlists List.map(fun xs -> )
